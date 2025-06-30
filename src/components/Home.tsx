@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="hero min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden"
+      className="pt-20 hero min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden"
     >
       {/* Animated Background Elements */}
       <div className="floating-elements absolute inset-0 pointer-events-none z-0">
@@ -29,7 +29,7 @@ const Home = () => {
           <div className="flex flex-col items-center lg:items-start lg:flex-1 order-2 lg:order-1">
             <div className="mb-6">
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-400 animate-gradient-shift">
-                Pranavshih Parmar Here
+                Pranav Parmar Here
               </h1>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-4">
                 <p className="text-gray-300 text-lg sm:text-xl font-semibold">Frontend Developer</p>

@@ -8,11 +8,11 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-50 px-6 py-3 bg-[rgba(0,0,0,0.8)] backdrop-blur border-b border-white/10">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex justify-between items-center overflow-x-auto whitespace-nowrap">
         <div className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
           PRANAV
         </div>
-        <ul className="hidden md:flex gap-6 text-white font-medium">
+        <ul className="hidden md:flex gap-6 text-white font-medium whitespace-nowrap">
           {["home", "about", "projects", "contact"].map((item) => (
             <li key={item}>
               <Link
