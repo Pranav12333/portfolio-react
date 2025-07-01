@@ -102,7 +102,6 @@ const Home = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-spin-slow opacity-75 blur-sm"></div>
               <div className="absolute inset-2 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 animate-spin-reverse opacity-50 blur-sm"></div>
               <img src={profile} alt="Pranav - Frontend Developer" className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full border-4 border-white/20 shadow-2xl object-cover z-10 hover:scale-105 transition-transform duration-500" />
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-bounce opacity-80"></div>
               <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-full animate-pulse opacity-70"></div>
               <div className="absolute top-1/2 -left-6 w-4 h-4 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full animate-ping opacity-60"></div>
             </div>
