@@ -1,7 +1,5 @@
-
-// --- Navbar.tsx ---
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom"; // ✅ Use from react-router-dom now
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -13,43 +11,25 @@ const Navbar = () => {
           PRANAV
         </div>
         <ul className="hidden md:flex gap-6 text-white font-medium">
-          {["home", "about", "projects", "contact"].map((item) => (
-            <li key={item}>
-              <Link
-                to={item}
-                smooth={true}
-                duration={500}
-                className="hover:text-indigo-400 cursor-pointer relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gradient-to-r from-indigo-400 to-purple-500 after:transition-all hover:after:w-full"
-              >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-              </Link>
-            </li>
-          ))}
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
-        <div
-          className="md:hidden flex flex-col cursor-pointer"
-          onClick={() => setOpen(!open)}
-        >
+
+        <div className="md:hidden flex flex-col cursor-pointer" onClick={() => setOpen(!open)}>
           <span className="w-6 h-0.5 bg-white mb-1"></span>
           <span className="w-6 h-0.5 bg-white mb-1"></span>
           <span className="w-6 h-0.5 bg-white"></span>
         </div>
       </div>
+
       {open && (
         <ul className="md:hidden flex flex-col bg-black/90 text-white px-8 py-4 space-y-4">
-          {["home", "about", "projects", "contact"].map((item) => (
-            <li key={item}>
-              <Link
-                to={item}
-                smooth={true}
-                duration={500}
-                onClick={() => setOpen(false)}
-                className="block text-lg"
-              >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-              </Link>
-            </li>
-          ))}
+          <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
+          <li><Link to="/about" onClick={() => setOpen(false)}>About</Link></li>
+          <li><Link to="/projects" onClick={() => setOpen(false)}>Projects</Link></li>
+          <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
         </ul>
       )}
     </nav>
