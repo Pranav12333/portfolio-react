@@ -34,6 +34,7 @@ module.exports = {
         'float-xy': 'floatXY 30s ease-in-out infinite',
         'spin-slow': 'spinSlow 30s linear infinite',
         'spin-reverse': 'spinReverse 40s linear infinite',
+        'spin-medium': 'spin 4s linear infinite',
       },
     },
   },
