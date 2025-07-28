@@ -39,17 +39,26 @@ const Home = () => {
             </div>
 
             <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-6 max-w-2xl">
-              <span className="text-indigo-300 font-semibold">  Transforming ideas into stunning digital experiences</span>
+              <span className="text-indigo-300 font-semibold">  Transforming ideas into stunning digital experiences </span>
               with modern web technologies and creative design thinking.
             </p>
 
             {/* Skills */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 max-w-2xl">
-              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">  <FaCode className="text-indigo-400 text-xl" />  <div>    <p className="text-white font-medium text-sm">Clean Code</p>    <p className="text-gray-400 text-xs">React, TypeScript</p>  </div>
+              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">  <FaCode className="text-indigo-400 text-xl" />  <div>    
+                <p className="text-white font-medium text-sm">Clean Code</p>    
+                <p className="text-gray-400 text-xs">React, TypeScript</p>
               </div>
-              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">  <FaPalette className="text-purple-400 text-xl" />  <div>    <p className="text-white font-medium text-sm">UI/UX Design</p>    <p className="text-gray-400 text-xs">Figma, Tailwind</p>  </div>
               </div>
-              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">  <FaRocket className="text-pink-400 text-xl" />  <div>    <p className="text-white font-medium text-sm">Performance</p>    <p className="text-gray-400 text-xs">Fast & Responsive</p>  </div>
+              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">  <FaPalette className="text-purple-400 text-xl" />  <div>    
+                <p className="text-white font-medium text-sm">UI/UX Design</p>    
+                <p className="text-gray-400 text-xs">CSS, Bootstrap , Etc. Liberaries</p>
+              </div>
+              </div>
+              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">  <FaRocket className="text-pink-400 text-xl" />  <div>    
+                <p className="text-white font-medium text-sm">Performance</p>    
+                <p className="text-gray-400 text-xs">Fast & Responsive</p>
+              </div>
               </div>
             </div>
 
