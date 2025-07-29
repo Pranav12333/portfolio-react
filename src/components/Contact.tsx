@@ -14,7 +14,7 @@ const Contact = () => {
     setStatus('');
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:3000/api/contact', {
+      const response = await fetch('https://portfolio-backend-d87a.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -39,7 +39,8 @@ const Contact = () => {
         <p className="text-lg text-gray-300 mb-10">
           Got a project idea or just want to say hello? Feel free to reach out!
         </p>
-        <form className="space-y-4" onSubmit={handleSubmit}>
+        <form className="space-y-4 flex flex-col items-start" onSubmit={handleSubmit}>
+          <label>Name:</label>
           <input
             type="text"
             name="name"
@@ -49,6 +50,7 @@ const Contact = () => {
             onChange={handleChange}
             className="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none"
           />
+          <label>Email id:</label>
           <input
             type="email"
             name="email"
@@ -58,6 +60,7 @@ const Contact = () => {
             onChange={handleChange}
             className="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none"
           />
+          <label>Message:</label>
           <textarea
             name="message"
             required
