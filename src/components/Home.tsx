@@ -71,7 +71,7 @@ const Home = () => {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 w-full sm:w-auto">
+            {/* <div className="flex flex-col sm:flex-row gap-4 mb-8 w-full sm:w-auto">
               <a href="#projects" className="group px-6 py-3 text-sm sm:text-base text-white bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full font-semibold hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
                 <span>View My Work</span>
                 <FaRocket className="group-hover:translate-x-1 transition-transform" />
@@ -80,7 +80,7 @@ const Home = () => {
                 <span>Hire Me Now</span>
                 <FaEnvelope className="group-hover:scale-110 transition-transform" />
               </a>
-            </div>
+            </div> */}
 
             {/* Social Icons */}
             <div className="flex gap-4 sm:gap-6">
@@ -160,12 +160,12 @@ const Home = () => {
       {/* Footer Availability */}
       <div className="mt-12 text-center z-10">
         <p className="text-gray-400 text-sm sm:text-base mb-4">
-          💼 Available for freelance projects and full-time opportunities
+          💼 <span className="text-indigo-400 font-semibold">Let's connect for collaboration or professional services</span>
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
           <span className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            Open to work
+            <div className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
+            Contact for Web Development / UI Services
           </span>
           <span className="hidden sm:block">•</span>
           <span>Remote & On-site</span>
